@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="App">
+    <header>
+      <h2>Guess The Number</h2>
+    </header>
+    <form id="JoinForm">
+      <input id="Player" placeholder="Enter your name" type="text">
+      <button type="submit">Join Game</button>
+    </form>
+    <form id="GuessForm" style="display:none;">
+      <input id="Guess" type="number" min="1" max="100" placeholder="Your guess">
+      <button type="submit">Guess</button>
+    </form>
+    <div id="Players"></div> 
+    <div id="Messages"></div>
+  </div>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
+

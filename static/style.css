@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;  
+    font-family: Arial;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+#App {
+    width: 680px;
+    background: #1762d9;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+header {
+    margin-bottom: 12px;
+}
+#Messages {
+    height: 410px;
+    overflow-y: auto;
+    background: #250ac1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(225,225,225,0.03);
+}
+.message {
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: #e00909;
+}
+.message strong {
+    color: #17b52c;
+}
+.message .ts {
+    float: right;
+    color: aquamarine;
+    font-size: 12px;
+}
+form {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+form input[type="text"], 
+form input[type="number"], 
+form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(225,225,225,0.04);
+    background: #061022;
+    color: #d6f127;
+}
+form button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+#Player, #user {
+    width: 150px;
+}
+
