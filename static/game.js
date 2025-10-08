@@ -15,6 +15,7 @@ function addMessage(msg) {
   messages.scrollTop = messages.scrollHeight;
 }
 
+
 function updatePlayerList(data) {
   if (data.players && data.players.length > 0) {
     playersDiv.innerHTML = `<strong>🎮 Players Online (${data.count}):</strong> ${data.players.join(', ')}`;

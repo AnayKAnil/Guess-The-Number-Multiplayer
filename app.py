@@ -61,6 +61,7 @@ def join_player(data):
     
     broadcast_players()
     broadcast_game_state()
+    
 
 @socketio.on('make_guess')
 def make_guess(data):
