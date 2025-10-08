@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guess The Number</title>
+    <title>Guess The Number - Multiplayer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -14,14 +14,14 @@
       <button type="submit">Join Game</button>
     </form>
     <form id="GuessForm" style="display:none;">
-      <input id="Guess" type="number" min="1" max="100" placeholder="Your guess">
+      <input id="Guess" type="number" min="1" max="100" placeholder="Your guess (1-100)">
       <button type="submit">Guess</button>
     </form>
-    <div id="Players"></div> 
+    <div id="GameStatus"></div>
+    <div id="Players"></div>
     <div id="Messages"></div>
   </div>
   <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
   <script src="{{ url_for('static', filename='game.js') }}"></script>
 </body>
 </html>
-
